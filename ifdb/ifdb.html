@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>IFDb</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="./css/custom.css" media="screen">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand"><img style="margin-top: -7px;" src="./img/cards.png"></span>
+				<a class="navbar-brand" href="http://nsd303:9090/ifdb">IFDb</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competitions<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">People<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li><a href="sitemap"><i class="fa fa-sitemap"></i> Sitemap</a></li>
+				</ul>
+
+				<div class="col-sm-3 col-md-3 pull-right">
+					<form role="form" method="get" action="search" class="navbar-form">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="q">
+
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="navbar-form navbar-right">
+					<div class="input-group">
+						<a href="login" class="btn btn-success" role="button"><i class="fa fa-sign-in"></i> Log in</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<ol class="breadcrumb">
+			<li class="active"><i class="fa fa-home"></i> Home</li>
+		</ol>
+
+		<div class="row">
+			<div class="col-md-12 jumbotron">
+				<div class="col-md-3">
+					<img src="./img/referee_won.png" class="img-rounded" style="width: 300px;">
+				</div>
+				<div class="col-md-9">
+					<h2>Internet Football Database!</h2>
+					<p>Welcome to IFDb, this is the <strong>wikipedia</strong> of football.</p>
+					<p>Here you can contribute, add yourself as a player and register your team winnings.</p>
+					<p><a class="btn btn-primary btn-large" href="about">Learn more</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img alt="Bootstrap Thumbnail First" src="./img/nation.jpg" class="img-rounded">
+							<div class="caption">
+								<h3>Nations</h3>
+								<p>
+									Here you can find your nation and view your favorite team.
+									Yay!! Go for it.
+								</p>
+								<p><a class="btn btn-primary" href="nation">Show me</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img alt="Bootstrap Thumbnail First" src="./img/competiton.jpg" class="img-rounded">
+							<div class="caption">
+								<h3>Competitions</h3>
+								<p>
+									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+									gravida at eget metus.
+									Nullam id dolor id nibh ultricies vehicula ut id elit.
+								</p>
+								<p>
+									<a class="btn btn-primary" href="competition">Show me</a>
+									<a class="btn btn-primary" href="competition/new">New competiton</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img alt="Bootstrap Thumbnail First" src="./img/player.jpg" class="img-rounded">
+							<div class="caption">
+								<h3>Players</h3>
+								<p>
+									Here you can find your favorite player, like Thomas Gravesen.
+									Nullam id dolor id nibh ultricies vehicula ut id elit.
+								</p>
+								<p>
+									<a class="btn btn-primary" href="person">Show me</a>
+									<a class="btn btn-primary" href="person/new">New player</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img alt="Bootstrap Thumbnail First" src="./img/match.jpg" class="img-rounded">
+							<div class="caption">
+								<h3>Matches</h3>
+								<p>
+									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+									gravida at eget metus.
+									Nullam id dolor id nibh ultricies vehicula ut id elit.
+								</p>
+
+								<p>
+									<a class="btn btn-primary" href="match">Show me</a>
+									<a class="btn btn-primary" href="match/new">New match</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row"></div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="article/14"><img src="./img/player.jpg" class="img-responsive"></a>
+					<div class="caption">
+						<h3><a href="article/14">Non Luctus Sit Limited</a></h3>
+						<p><small><i class="fa fa-user"></i> Prescott Morris</small></p>
+						<p><small><i class="fa fa-clock-o"></i> 19. juni 2016 07:36:15 CEST</small></p>
+						<p>et libero. Proin mi. Aliquam gravida mauris ut mi. Duis risus odio, auctor vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. ...</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="article/14"><img src="./img/player.jpg" class="img-responsive"></a>
+					<div class="caption">
+						<h3><a href="article/13">Quis Pede Ltd</a></h3>
+						<p><small><i class="fa fa-user"></i> Lamar Henry</small></p>
+						<p><small><i class="fa fa-clock-o"></i> 11. mars 2016 21:29:59 CET</small></p>
+						<p>bibendum sed, est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Don...</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="article/14"><img src="./img/player.jpg" class="img-responsive"></a>
+					<div class="caption">
+						<h3><a href="article/12">Lorem Fringilla Ornare LLP</a></h3>
+						<p><small><i class="fa fa-user"></i> Hoyt Woodard</small></p>
+						<p><small><i class="fa fa-clock-o"></i> 11. september 2014 02:28:02 CEST</small></p>
+						<p>id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspe...</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="article/14"><img src="./img/player.jpg" class="img-responsive"></a>
+					<div class="caption">
+						<h3><a href="article/10">Dui Cras Pellentesque Institute</a></h3>
+						<p><small><i class="fa fa-user"></i> Leonard Terry</small></p>
+						<p><small><i class="fa fa-clock-o"></i> 17. mai 2016 12:55:26 CEST</small></p>
+						<p>vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce aliquet magna a neque. Nullam ut nisi a odio semper c...</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="article/14"><img src="./img/player.jpg" class="img-responsive"></a>
+					<div class="caption">
+						<h3><a href="article/8">Conubia Nostra Consulting</a></h3>
+						<p><small><i class="fa fa-user"></i> Timothy Hartman</small></p>
+						<p><small><i class="fa fa-clock-o"></i> 5. august 2016 03:29:02 CEST</small></p>
+						<p>eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique ...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid footer text-center">
+		<h4>Copyright IFDb @</h4>
+	</footer>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/validator.js"></script>
+
+<script src="./js/utility.js"></script>
+<script src="./js/database.js"></script>
+<script src="./js/enable_cookies_and_javascript.js"></script>
+<script src="./js/error_log.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
+
