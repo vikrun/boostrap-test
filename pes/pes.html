@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://nsd303:8080/pes/prosjekt/1 -->
+<html lang="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>1 - Tittel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://nsd303:8080/pes/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" media="screen">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+
+    <script src="./1 - Tittel_files/jquery.min.js"></script>
+    <script src="./1 - Tittel_files/jquery-ui.min.js"></script>
+    <script src="./1 - Tittel_files/bootstrap.min.js"></script>
+
+    <script src="./1 - Tittel_files/main.js"></script>
+    <script src="./1 - Tittel_files/enable_cookies_and_javascript.js"></script>
+    <script src="./1 - Tittel_files/error_log.js"></script><style type="text/css"></style>
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="container-fluid">
+
+<form class="form-horizontal" method="post" id="form_prosjekt" action="http://nsd303:8080/pes/prosjekt/1/update">
+    
+
+
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"><img style="margin-top: -7px;" src="./1 - Tittel_files/logo.png"></span>
+            <span class="navbar-brand">PES</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <button type="button" id="btn_prosjekt" class="btn navbar-btn btn-default active" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
+                        <i class="fa fa-folder"></i> Prosjekt
+                    </button>
+                </li>
+                <li><button type="button" id="btn_instilling" class="btn btn-default navbar-btn"><i class="fa fa-comment"></i> Kommentar</button></li>
+                <li><button type="button" id="btn_skjema" class="btn btn-primary navbar-btn"><i class="fa fa-file-text"></i> Skjema</button></li>
+                <li>
+                    <button type="button" id="btn_henvendelser" class="btn navbar-btn                         btn-info">
+                    <i class="fa fa-list-ol"></i> Henvendelser</button>
+                </li>
+                <li>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="btn-group navbar-btn">
+                                <button id="btn_lovdata" class="btn dropdown-toggle btn-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-gavel"></i> Lovdata <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a id="btn_hjemmelsgrunnlag" class="btn-info"><i class="fa fa-gavel"></i> Hjemmelsgrunnlag</a></li>
+                                    <li><a id="btn_personopplysningsloven" class="btn-info"><i class="fa fa-gavel"></i> Personopplysningsloven</a></li>
+                                    <li><a id="btn_helseregisterloven" class="btn-info"><i class="fa fa-gavel"></i> Helseregisterloven</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" id="btn_endringsopplysninger" class="btn navbar-btn                         btn-default">
+                        <i class="fa fa-undo"></i> Endring
+                    </button>
+                </li>
+                <li><button type="button" id="btn_avvik" class="btn navbar-btn btn-danger"><i class="fa fa-exclamation-triangle"></i> Avvik</button></li>
+                <li><button type="button" id="btn_utfall" class="btn btn-default navbar-btn"><i class="fa fa-envelope"></i> Utfall</button></li>
+                <li>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="btn-group navbar-btn">
+                                <button class="btn btn-default dropdown-toggle" id="btn_linker" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-link"></i> Linker <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://intern.nsd.uib.no:8380/meldingsarkiv2/nsdlogginn?passord=BergenVoss&amp;institusjon=2&amp;id=1" target="_blank">
+                                        <i class="fa fa-inbox"></i> Meldingsarkivet</a>
+                                    </li>
+                                    
+                                    
+                                    <li><a href="http://nsd303:8080/pes/prosjekt/1/logg" target="_blank"><i class="fa fa-book"></i> Logg</a></li>
+                                    
+                                        <li role="separator" class="divider"></li>
+                                        <li class="disabled"><a href=""><i class="fa fa-exclamation-triangle"></i> Fant ikke meldeskjema</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><button type="button" id="btn_lagre" class="btn btn-primary navbar-btn"><i class="fa fa-floppy-o"></i> Lagre</button></li>
+                <span class="navbar-brand">
+                    <a href="http://tuppen-tomcat:8080/internweb/officer" target="_blank">
+                        <img style="margin-top: -7px;width: 33px;" src="./1 - Tittel_files/6af098ab8ba04a15a200dad76184e469" title="Instillinger for Rune Vikøren">
+                    </a>
+                </span>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+    
+
+
+
+
+
+
+
+<div class="row space" id="row_prosjekt">
+    <input class="hidden" id="saksbehandler_id" name="saksbehandler_id" value="18">
+
+    <div class="col-md-4" id="col_prosjektnummer">
+        <div class="form-group">
+            <label class="control-label col-md-5" for="prosjektnummer"><small>Pnr</small></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control input-sm alert-danger" id="prosjektnummer" name="prosjektnummer" value="1" readonly="">
+            </div>
+        </div>
+
+        <div class="form-group" id="col_rek_nr">
+            <label class="control-label col-md-5" for="rek_nr"><small>Rek nr</small></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control input-sm" id="rek_nr" name="rek_nr" value="REK">
+            </div>
+        </div>
+
+        <div class="form-group" id="col_parallelle_prosjekt">
+            <label class="control-label col-md-5" for="parallelle_prosjekt"><small>Parallelle prosjekt</small></label>
+            <div class="col-md-5">
+                <div class="input-group">
+                    <input type="text" class="form-control input-sm" id="parallelle_prosjekt" name="parallelle_prosjekt" value="1234">
+                    <span class="input-group-addon mouse" id="btn_parallelle_prosjekt"><i class="fa fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_reg_dato">
+            <label class="control-label col-md-5" for="reg_dato"><small>Reg. dato</small></label>
+            <div class="col-md-5">
+                <div class="input-group">
+                    <input type="text" class="form-control input-sm" id="reg_dato" name="reg_dato" value="30.07.2005" readonly="">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_start_dato">
+            <label class="control-label col-md-5" for="start_dato"><small>Prosjektstart</small></label>
+            <div class="col-md-5">
+                <div class="input-group mouse">
+                    <input type="text" class="form-control input-sm hasDatepicker" id="start_dato" name="start_dato" value="19.11.2015">
+                    <span class="input-group-addon" id="btn_start_dato"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_slutt_dato">
+            <label class="control-label col-md-5" for="slutt_dato"><small>Prosjektslutt</small></label>
+            <div class="col-md-5">
+                <div class="input-group mouse">
+                    <input type="text" class="form-control input-sm hasDatepicker" id="slutt_dato" name="slutt_dato" value="18.11.2015">
+                    <span class="input-group-addon" id="btn_slutt_dato"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_vedlegg_dato">
+            <label class="control-label col-md-5" for="vedlegg_dato"><small>Siste avklaring</small></label>
+            <div class="col-md-5">
+                <div class="input-group mouse">
+                    <input type="text" class="form-control input-sm hasDatepicker" id="vedlegg_dato" name="vedlegg_dato" value="20.11.2015">
+                    <span class="input-group-addon" id="btn_vedlegg_dato"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_kategori_faggruppe_id">
+            <label class="control-label col-md-5" for="kategori_faggruppe_id"><small>Faggruppe</small></label>
+            <div class="col-md-7">
+                <select class="form-control input-sm" id="kategori_faggruppe_id" name="kategori_faggruppe_id">
+                    
+                        
+                            <option value="100">
+                                Humaniora
+                            </option>
+                        
+                    
+                        
+                            <option value="0">
+                                Ikke valgt
+                            </option>
+                        
+                    
+                        
+                            <option value="340">
+                                Juridiske fag
+                            </option>
+                        
+                    
+                        
+                            <option value="400">
+                                Matematikk, biologi, landbruk og fiskerifag
+                            </option>
+                        
+                    
+                        
+                            <option value="700">
+                                Medisinske og helsefag
+                            </option>
+                        
+                    
+                        
+                            <option value="280" selected="selected">
+                                Pedagogiske fag
+                            </option>
+                        
+                    
+                        
+                            <option value="260">
+                                Psykologi
+                            </option>
+                        
+                    
+                        
+                            <option value="200">
+                                Samfunnsfag
+                            </option>
+                        
+                    
+                        
+                    
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_kategori_behandlingsgrunnlag_id">
+            <label class="control-label col-md-5" for="kategori_behandlingsgrunnlag_id"><small>Beh.grunnlag</small></label>
+            <div class="col-md-7">
+                <select class="form-control input-sm" id="kategori_behandlingsgrunnlag_id" name="kategori_behandlingsgrunnlag_id">
+                    
+                        
+                    
+                        
+                    
+                        
+                            <option value="3">
+                                § 31 (Meldepliktig prosjekt)
+                            </option>
+                        
+                    
+                        
+                            <option value="1">
+                                § 33 (konsesjonspliktig prosjekt)
+                            </option>
+                        
+                    
+                        
+                            <option value="2">
+                                § 7-27 (Unntatt fra konsesjonsplikt)
+                            </option>
+                        
+                    
+                        
+                            <option value="4" selected="selected">
+                                Ikke pliktig
+                            </option>
+                        
+                    
+                        
+                            <option value="0">
+                                Ikke valgt
+                            </option>
+                        
+                    
+                        
+                            <option value="7">
+                                IKP-Forenkelt melding
+                            </option>
+                        
+                    
+                        
+                            <option value="8">
+                                IKP-Helseforskningsloven
+                            </option>
+                        
+                    
+                        
+                            <option value="6">
+                                IKP-utprøver/databehandler
+                            </option>
+                        
+                    
+                        
+                            <option value="-1">
+                                Under behandling
+                            </option>
+                        
+                    
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group" id="col_kategori_status_id">
+            <label class="control-label col-md-5" for="kategori_status_id"><small>Status</small></label>
+            <div class="col-md-7">
+                <select class="form-control input-sm" id="kategori_status_id" name="kategori_status_id">
+                    
+                        
+                    
+                        
+                    
+                        
+                            <option value="6" selected="selected">
+                                Aktivt, ferdig vurdering av meldeplikt
+                            </option>
+                        
+                    
+                        
+                            <option value="30">
+                                Aktivt, under vurdering endring
+                            </option>
+                        
+                    
+                        
+                            <option value="21">
+                                Avsluttet – Manglende tilbakemelding/ikke avtale
+                            </option>
+                        
+                    
+                        
+                    
+                        
+                            <option value="11">
+                                Avsluttet ?, ingen status tilbakemelding
+                            </option>
+                        
+                    
+                        
+                    
+                        
+                            <option value="22">
+                                Avsluttet, antar at data er anonymisert
+                            </option>
+                        
+                    
+                        
+                    
+                        
+                            <option value="3">
+                                Avsluttet, data er anonymisert
+                            </option>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <option value="24">
+                                Avsluttet, meldes annen instans
+                            </option>
+                        
+                    
+                        
+                            <option value="26">
+                                Avsluttet, persondata arkivert hos institusjon
+                            </option>
+                        
+                    
+                        
+                            <option value="4">
+                                Avsluttet, persondata er arkivert hos NSD/institusjon
+                            </option>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <option value="20">
+                                Data er overført annet prosjekt
+                            </option>
+                        
+                    
+                        
+                            <option value="8">
+                                Ikke realisert
+                            </option>
+                        
+                    
+                        
+                            <option value="9">
+                                Ikke tilrådd, sendt institusjon eller Datatilsynet
+                            </option>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <option value="29">
+                                REK, godkjent
+                            </option>
+                        
+                    
+                        
+                            <option value="31">
+                                REK, utenfor mandatet/ikke godkjent
+                            </option>
+                        
+                    
+                        
+                            <option value="7">
+                                Ukjent
+                            </option>
+                        
+                    
+                        
+                            <option value="1">
+                                Under vurdering
+                            </option>
+                        
+                    
+                        
+                            <option value="16">
+                                Under vurdering § 33
+                            </option>
+                        
+                    
+                        
+                    
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8" id="col_tittel">
+        <div class="form-group">
+            <label class="control-label col-md-1" for="tittel"><small>Tittel</small></label>
+            <div class="col-md-9">
+                <textarea class="form-control input-sm" rows="5" id="tittel" name="tittel">Tittel</textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-1" for="formaal"><small>Formål</small></label>
+            <div class="col-md-9">
+                <textarea class="form-control input-sm" rows="2" id="formaal" name="formaal">Formål</textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 hidden" id="col_instilling">
+        <div class="row">
+            <div class="btn-group">
+                <button type="button" id="btn_generer_tekst_instilling" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-pencil"></i> Generer tekst <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a id="btn_generer_tekst_norsk">Norsk</a></li>
+                    <li><a id="btn_generer_tekst_engelsk">Engelsk</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" id="btn_ikke_meldepliktig_instilling" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-pencil"></i> Ikke meldepliktig <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a id="btn_ikke_meldepliktig_norsk">Norsk</a></li>
+                    <li><a id="btn_ikke_meldepliktig_engelsk">Engelsk</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row space">
+            <div class="form-group">
+                <label class="control-label hidden" for="instilling"><small>Kommentar</small></label>
+                <div class="col-md-10">
+                    <textarea class="form-control input-sm" rows="12" id="instilling" name="instilling" style="height: 700px"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="col-md-4 hidden" id="col_konsesjonspliktig_prosjekt">
+        <fieldset class="mouse">
+            <legend>
+                <small>§33 Konsesjonspliktig prosjekt</small>
+            </legend>
+            <div class="row-fluid">
+                <div class="form-group">
+                    <label class="control-label col-md-5" for="konsesjon_start_dato"><small>Startdato</small></label>
+                    <div class="col-md-5">
+                        <div class="input-group mouse">
+                            <input type="text" class="form-control input-sm hasDatepicker" id="konsesjon_start_dato" name="konsesjon_start_dato" value="">
+                            <span class="input-group-addon" id="btn_konsesjon_start_dato"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-5" for="konsesjon_slutt_dato"><small>Sluttdato</small></label>
+                    <div class="col-md-5">
+                        <div class="input-group mouse">
+                            <input type="text" class="form-control input-sm hasDatepicker" id="konsesjon_slutt_dato" name="konsesjon_slutt_dato" value="">
+                            <span class="input-group-addon" id="btn_konsesjon_slutt_dato"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-5" for="dt_referanse"><small>DT referanse</small></label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control input-sm" id="dt_referanse" name="dt_referanse" value="">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="col-md-4" id="col_avdeling">
+        <fieldset class="mouse" id="btn_avdeling">
+            <legend>
+                <small><i class="fa fa-pencil-square-o"></i> Institusjon</small>
+            </legend>
+            <div class="row-fluid">
+                <div class="form-group">
+                    <label class="control-label col-md-3 mouse" for="institusjon"><small>Institusjon</small></label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control input-sm mouse
+                            alert-danger
+                        " id="institusjon" name="institusjon" value="Universitetet i Oslo" disabled="">
+                    </div>
+                </div>
+
+                
+                    <div class="form-group">
+                        <label class="control-label col-md-3 mouse" for="fakultet"><small>Fakultet</small></label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control input-sm mouse
+                                alert-danger
+                            " id="fakultet" name="fakultet" value="Det matematisk-naturvitenskapelige fakultet" disabled="">
+                        </div>
+                    </div>
+                
+
+                
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-4" id="col_daglig_ansvarlig">
+        <fieldset class="mouse" id="btn_daglig_ansvarlig">
+            <legend><small><i class="fa fa-pencil-square-o"></i> Daglig ansvarlig</small></legend>
+            <div class="row-fluid">
+                <div class="form-group">
+                    <label class="control-label col-md-3 mouse" for="daglig_ansvarlig_navn"><small>Navn</small></label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control input-sm mouse" id="daglig_ansvarlig_navn" name="daglig_ansvarlig_navn" value="Rune Vikøren" disabled="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 mouse" for="daglig_ansvarlig_epost"><small>Epost</small></label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control input-sm mouse" id="daglig_ansvarlig_epost" name="daglig_ansvarlig_epost" value="rune.vikoren@nsd.uib.no" disabled="">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 mouse" for="daglig_ansvarlig_tlf"><small>Tlf / Mobil</small></label>
+                    <div class="col-md-9">
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control input-sm mouse" id="daglig_ansvarlig_tlf" name="daglig_ansvarlig_tlf" value="92831972" disabled="">
+                            </div>
+
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control input-sm mouse" id="daglig_ansvarlig_mobil" name="daglig_ansvarlig_mobil" value="123" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-4" id="col_student">
+        <fieldset class="mouse" id="btn_student">
+            <legend><small><i class="fa fa-pencil-square-o"></i> Student</small></legend>
+            
+        </fieldset>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="col-md-4" id="col_arbeidssted">
+        <fieldset class="mouse" id="btn_arbeidssted">
+            <legend><small><i class="fa fa-pencil-square-o"></i> Arbeidssted</small></legend>
+            <div class="row-fluid">
+                <div class="form-group">
+                    <label class="control-label mouse hidden" for="arbeidssted"></label>
+                    <textarea class="form-control input-sm" rows="3" id="arbeidssted" name="arbeidssted" disabled="">Arbeidsmiljø, integrering og mestring
+Arbeidsforskningsinstituttet AS</textarea>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-4" id="col_saksbehandler">
+        <fieldset class="mouse" id="btn_saksbehandler">
+            <legend><small><i class="fa fa-pencil-square-o"></i> Saksbehandler</small></legend>
+            <div class="row-fluid">
+                <div class="form-group">
+                    <label class="control-label col-md-4 mouse" for="saksbehandler_meldeskjema"><small>Meldeskjema</small></label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control input-sm mouse
+                            
+                            
+                        " id="saksbehandler_meldeskjema" name="saksbehandler_meldeskjema" value="Sondre S. Arnesen" disabled="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-4 mouse" for="saksbehandler_endringsskjema"><small>Endringsskjema</small></label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control input-sm mouse
+                            
+                            
+                        " id="saksbehandler_endringsskjema" name="saksbehandler_endringsskjema" value="Audun Løvlie" disabled="">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-4" id="col_neste_henvendelse">
+        <fieldset class="mouse">
+            <legend><small> <i class="fa fa-calendar-minus-o"></i> Neste henvendelse</small></legend>
+
+            <div class="form-group">
+                <label class="control-label col-md-3" for="neste_henvendelse"><small>Henvendelse</small></label>
+                <div class="col-md-7">
+                    <select class="form-control input-sm" id="neste_henvendelse" name="neste_henvendelse">
+                        <option value="0"></option>
+                        
+                            
+                        
+                            
+                        
+                            
+                                <option value="204" class="alert-info">
+                                        1. brev om overføring av anonyme data
+                                </option>
+                            
+                        
+                            
+                                <option value="201" class="alert-danger">
+                                        1. brev om status
+                                </option>
+                            
+                        
+                            
+                                <option value="210" class="alert-info">
+                                        2. brev om overføring av anonyme data
+                                </option>
+                            
+                        
+                            
+                                <option value="202">
+                                        2. brev om status
+                                </option>
+                            
+                        
+                            
+                                <option value="203">
+                                        3. brev om oversendelse til institusjon
+                                </option>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <option value="231" class="alert-danger">
+                                        Ber om REK søknad
+                                </option>
+                            
+                        
+                            
+                        
+                            
+                                <option value="218">
+                                        Brev til Datatilsynet, Avsluttet og anonymisert
+                                </option>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <option value="205">
+                                        Individuell kontakt
+                                </option>
+                            
+                        
+                            
+                        
+                            
+                                <option value="55">
+                                        Ingen kontakt
+                                </option>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <option value="232" class="alert-danger">
+                                        Status helseforskning
+                                </option>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-default" id="btn_neste_henvendelse"><i class="fa fa-calendar-minus-o"></i></button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-4 mouse" for="ny_kontakt"><small>Neste kontakt</small></label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control input-sm mouse" id="ny_kontakt" name="ny_kontakt" value="" placeholder="ååååmm">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="row space hidden" id="row_hjemmelsgrunnlag">
+    <div class="col-md-6" id="personopplysningsloven_p8">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-gavel"></i> Personopplysningsloven §8</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_ikke" id="p_8_ikke" type="checkbox" checked="">
+                        <small>Faller utenfor §8</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_81" type="checkbox">
+                        <small>§8 (med den registrertes samtykke)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_82" type="checkbox">
+                        <small>§8 (ved at det er fastsatt i lov)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_a" type="checkbox">
+                        <small>§8 a (å oppfylle en avtale med den registrerte, eller for å utføre gjøremål etter den
+                            registrertes ønske...)
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_b" type="checkbox">
+                        <small>§8 b (at den behandlings- ansvvarlige skal kunne oppfylle en rettslig forpliktelse)
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_c" type="checkbox">
+                        <small>§8 c (å vareta den registrertes vitale interesser)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_d" type="checkbox">
+                        <small>§8 d (å utføre en oppgave av allmenn interesse)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_e" type="checkbox">
+                        <small>§8 e (å utøve offentlig myndighet)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_8_f" type="checkbox">
+                        <small>§8 f (for at den behandlingsansvarlige eller tredjepersoner som opplysningene utleveres
+                            til kan vareta en...)
+                        </small>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6" id="personopplysningsloven_p9">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-gavel"></i> Personopplysningsloven §9</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_ikke" id="p_9_ikke" type="checkbox" checked="">
+                        <small>Faller utenfor §9</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_a" type="checkbox">
+                        <small>§9 a (med den registrertes samtykke)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_b" type="checkbox">
+                        <small>§9 b (det er fastsatt i lov at det er adgang til slik behandling)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_c" type="checkbox" data-toggle="tooltip" title="" data-original-title="Husk personopplysningsloven og  Helseregisterloven!">
+                        <small>§9 c (behandlingen er nødvendig for å beskytte en persons vitale interesser, og den
+                            registrerte ikke...)
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_d" type="checkbox">
+                        <small>§9 d (det utelukkende behandles opplysninger som den registrerte selv frivillig har gjort
+                            alminnelig kjent )
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_e" type="checkbox">
+                        <small>§9 e (behandlingen er nødvendig for å fastsette, gjøre gjeldende eller forsvare et
+                            rettskrav)
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_f" type="checkbox">
+                        <small>§9 f (behandlingen er nødvendig for at den behandlingsansvarlige kan gjennomføre
+                            sine...)
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_g" type="checkbox">
+                        <small>§9 g (behandlingen er nødvendig for forebyggende sykdomsbehandling (...)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_9_h" type="checkbox">
+                        <small>§9 h (behandlingen er nødvendig for historiske (...)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="p_92" type="checkbox">
+                        <small>§9 2. ledd (I henhold til POL §9 annet ledd)</small>
+                    </label>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+
+</div>
+
+
+    
+
+
+
+
+<div class="row space hidden" id="row_personopplysningsloven">
+    <div class="col-md-6">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-gavel"></i> POL § 20</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_20_a" type="checkbox">
+                        <small>§20 a. innsamlingen eller formidlingen av opplysningene er uttrykkelig fastsatt i lov</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_20_b" type="checkbox" checked="">
+                        <small>§20 b. varsling er umulig eller uforholdsmessig vanskelig, eller</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_20_c" type="checkbox">
+                        <small>§20 c. det er på det rene at den registrerte allerede kjenner til informasjonen varselet skal inneholde</small>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-gavel"></i> POL § 23</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_23_a" type="checkbox" checked="">
+                        <small>§23 a.  om de ble kjent, ville kunne skade rikets sikkerhet, landets forsvar eller forholdet til fremmede makter eller internasjonale organisasjoner</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_23_b" type="checkbox" checked="">
+                        <small>§23 b. det er påkrevd å hemmeligholde av hensyn til forebygging, etterforskning, avsløring og rettslig forfølgning av straffbare handlinger</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_23_c" type="checkbox">
+                        <small>§23 c. det må anses utilrådelig at den registrerte får kjennskap til, av hensyn til vedkommendes helse eller forholdet til personer som står vedkommende nær</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_23_d" type="checkbox">
+                        <small>§23 d. det i medhold  av lov gjelder taushetsplikt for</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_23_e" type="checkbox">
+                        <small>§23 e. utelukkende finnes i tekst som er utarbeidet for den interne saksforberedelse og som heller ikke er utlevert til andre</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_23_f" type="checkbox">
+                        <small>§23 f. det vil være i strid med åpenbare og grunnleggende private eller offentlige interesser å informere om, herunder hensynet til den registrerte selv</small>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="row space hidden" id="row_helseregisterloven">
+    <div class="col-md-6">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-gavel"></i> Helseregisterloven §24</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_241" type="checkbox" checked="">
+                        <small>§24 1. innsamlingen eller formidlingen av opplysningene er uttrykkelig fastsatt i
+                            lov...
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_242" type="checkbox">
+                        <small>§24 2. varsling er umulig eller uforholdsmessig vanskelig, eller...</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_243" type="checkbox">
+                        <small>§24 3. det er på det rene at den registrerte allerede kjenner til informasjonen som
+                            varslet skal inneholde...
+                        </small>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="col-md-6">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-gavel"></i> Helseregisterloven §25</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_251" type="checkbox" checked="">
+                        <small>§25 1. om de ble kjent, ville kunne skade rikets sikkerhet, landets forsvar eller
+                            forholdet til fremmede makter eller internasjonale organisasjoner...
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_252" type="checkbox">
+                        <small>§25 2. det er påkrevd å hemmeligholde av hensyn til forebygging, etterforskning,
+                            avsløring og rettslig forfølging av straffbare handlinger...
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_253" type="checkbox">
+                        <small>§25 3. det må anses utilrådelig at den registrerte får kjennskap til, av hensyn
+                            vedkommendes helse eller forholdet til personer som står vedkommende nær...
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_254" type="checkbox">
+                        <small>§25 4. det i medhold av lov gjelder taushetsplikt for...</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_255" type="checkbox">
+                        <small>§25 5. utelukkende finnes i tekst som er utarbeidet for den interne saksforberedelse og
+                            som heller ikke er utlevert til andre...
+                        </small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input name="pol_256" type="checkbox">
+                        <small>§25 6. det vil være i strid med åpenbare og grunnleggende private eller offentlige
+                            interesser å informere om, herunder hensynet til den registrerte selv...
+                        </small>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+</div>
+
+    
+
+
+
+
+<div class="row space hidden" id="row_avvik">
+    <div class="col-md-6">
+        <fieldset class="mouse">
+            <legend>
+                <small><i class="fa fa-exclamation-triangle"></i> Avvik</small>
+            </legend>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_rekruttering" checked="">
+                        <small>Rekruttering/førstegangskontakt</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_datainnsamling_startet">
+                        <small>Datainnsamling påbegynt</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_datainnsamling_ferdig">
+                        <small>Datatinnsamling gjennomført</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_data_innsamlet_anonymisert">
+                        <small>Data innsamlet og anonymisert</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_brudd_taushetsplikten">
+                        <small>Brudd på taushetsplikten</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_mangelfullt_informasjonsskriv">
+                        <small>Mangelfullt informasjonsskriv</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="avvik_meldeskjema_daarlig_utfylt">
+                        <small>Meldeskjemaet dårlig utfylt</small>
+                    </label>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+</div>
+
+
+
+
+
+    
+
+
+
+
+<div class="row space hidden" id="row_utfall">
+    <div class="col-md-12">
+        <div class="btn-group"><!-- buttons -->
+            <a href="http://tuppen-tomcat:8080/internweb/receipt/1/new" target="_blank" role="button" class="btn btn-default">
+                <i class="fa fa-file-pdf-o"></i> Kvittering
+            </a>
+            <a href="http://tuppen-tomcat:8080/internweb/project/1/word" target="_blank" role="button" class="btn btn-default">
+                <i class="fa fa-file-word-o"></i> Brevmal
+            </a>
+
+            
+            
+               
+                
+            
+            
+               
+                
+            
+            
+        </div>
+    </div>
+
+    <div class="col-md-12 space">
+        <div class="btn-group"><!-- buttons -->
+            <div class="col-md-12 space">
+                <div class="form-group form-inline">
+                    <label for="epost_mottaker"></label>
+                    <select class="form-control" id="epost_mottaker">
+                        <option value="forsker">Forsker</option>
+                        
+                        
+                    </select>
+
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o"></i> Epost <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="btn_epost_maler"><li><a id="4"><i class="fa fa-envelope-o"></i> Ettersendte dokumenter</a></li><li><a id="2"><i class="fa fa-envelope-o"></i> Standard brev</a></li><li><a id="3"><i class="fa fa-envelope-o"></i> Standard brev (Engelsk)</a></li><li><a id="1"><i class="fa fa-envelope-o"></i> tittel</a></li></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+</form>
+
+
+
+
+
+
+<div class="modal fade" id="modal_loading" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="fa fa-database"></i> Lagrer data!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lagrer data! <strong>Ikke</strong> lukk vinduet.</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                        <span class="sr-only">77% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="modal_laas" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="fa fa-lock"></i> Lås</h4>
+            </div>
+            <div class="modal-body">
+                <p>Prosjektet er låst av saksbehandler: . Tlf: .</p>
+                <p>Du kan <strong>ikke</strong> gjøre endringer på prosjektet.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>

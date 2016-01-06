@@ -1,0 +1,76 @@
+body { background: #E8E9EA !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+.locked { background: #ABACAD !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+fieldset {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+legend {
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+}
+
+.mouse {
+    cursor: pointer;
+}
+
+.thumbnail img {
+    min-height: 60px;
+    height: 60px;
+}
+
+.space {
+    margin-top: 10px;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 30px 0;
+}
+
+.ui-datepicker { position: relative; z-index: 10000 !important; }
+
+button.navbar-btn {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+input.upload {
+    padding: 40px;
+}
+
+
+/*/!*set not valid value*!/*/
+/*select#neste_henvendelse {*/
+    /*/!*background: yellow !important;*!/*/
+    /*background-image: -webkit-linear-gradient(top,#f2dede 0,#e7c3c3 100%);*/
+    /*background-image: -o-linear-gradient(top,#f2dede 0,#e7c3c3 100%);*/
+    /*background-image: -webkit-gradient(linear,left top,left bottom,from(#f2dede),to(#e7c3c3));*/
+    /*background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);*/
+    /*background-repeat: repeat-x;*/
+    /*border-color: #dca7a7;*/
+/*}*/
+
+/*('#kategori_faggruppe_id').addClass("alert-danger");*/
+
